@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Market</title>
+    <style>
+        .body {
+            max-width: 1024px;
+        }
+
+        header h1 {
+            text-align: center;
+            background-color: lightgray;
+            font-size: 55px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 17px;
+        }
+
+        .market {
+            padding: 15px;
+            box-shadow: 10px 20px 30px grey;
+            border-radius: 5px;
+        }
+
+        .market h2 {
+            font-size: 32px;
+        }
+
+        .market img {
+            width: 100%;
+        }
+
+        .price {
+            font-size: 25px;
+            font-weight: 550;
+        }
+
+        @media screen and (max-width: 767px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Popular Collection</h1>
+    </header>
+    <main class="container">
+        <div class="market">
+            <img src="Flex-Tripod-1.jpg" alt="">
+            <h2>Flex Tripod</h2>
+            <p class="price">$50.48</p>
+            <p>This Product Available Now</p>
+        </div>
+        <div class="market">
+            <img src="microphone-1.jpg" alt="">
+            <h2>Mairophone</h2>
+            <p class="price">$120.25</p>
+            <p>This Product Available Now</p>
+        </div>
+        <div class="market">
+            <img src="Airbuds-1.jpg" alt="">
+            <h2>Airbuds</h2>
+            <p class="price">$100</p>
+            <p>This Product Available Now</p>
+        </div>
+        <div class="market">
+            <img src="Drone-1.jpg" alt="">
+            <h2>Drone</h2>
+            <p class="price">$980.23</p>
+            <p>This Product Available Now</p>
+        </div>
+        <div class="market">
+            <img src="Light setup-1.jpg" alt="">
+            <h2>Light Setup</h2>
+            <p class="price">$1200.00</p>
+            <p>This Product Available Now</p>
+        </div>
+        <div class="market">
+            <img src="computer-setup-1.jpg" alt="">
+            <h2>Computer Setup</h2>
+            <p class="price">$1500.00</p>
+            <p>This Product Available Now</p>
+        </div>
+    </main>
+</body>
+
+</html>
